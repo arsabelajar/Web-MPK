@@ -273,7 +273,7 @@ function renderRoleBanner() {
             <p style="font-size:0.75rem; margin-top:2px;">Anda berwenang menulis dan mempublikasikan tanggapan resmi MPK atas aspirasi siswa (tanpa izin menghapus data).</p>
           </div>
         </div>
-        <span class="brand-tag" style="background:#ccfbf1; color:#0f766e;">Hak Akses: Menjawab Aspirasi</span>
+        <span class="brand-tag" style="background:#fee2e2; color:#991b1b;">Hak Akses: Menjawab Aspirasi</span>
       </div>
     `;
   }
@@ -575,8 +575,8 @@ function renderQuestionsList() {
       `;
     } else if (isSek) {
       roleActionsHtml = `
-        <div class="q-admin-actions" style="background:#f0fdfa; border:1px solid #99f6e4;">
-          <span style="font-size:0.75rem; font-weight:800; color:#0f766e; margin-right:auto;">
+        <div class="q-admin-actions" style="background:#fff1f2; border:1px solid #fecdd3;">
+          <span style="font-size:0.75rem; font-weight:800; color:#9f1239; margin-right:auto;">
             📝 Aksi Sekretariat:
           </span>
           <button onclick="openAnswerModal('${item.id}')" class="btn btn-primary btn-sm">

@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MPK MAN 1 JEMBER - Sinergi, Aspiratif & Transparan</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="logo-mpk.png">
+
   <!-- 100% Standalone Offline-Ready Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -19,12 +23,7 @@
 
         <!-- Brand Logo -->
         <a href="#portofolio" onclick="switchPage('portofolio')" class="brand">
-          <div class="brand-icon">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M12 2L1 8l2.5 1.5V17c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V9.5L23 8 12 2zm0 2.8L19.2 8 12 11.8 4.8 8 12 4.8zM6 10.6l5 2.7v5.7H6v-8.4zm7 8.4v-5.7l5-2.7v8.4h-5z" />
-            </svg>
-          </div>
+          <img src="logo-mpk.png" alt="Logo MPK MAN 1 JEMBER" class="brand-logo-img">
           <div class="brand-text">
             <h1>MPK <span>MAN 1 JEMBER</span> <span class="brand-tag">Resmi</span></h1>
             <p>Majelis Perwakilan Kelas • Suara & Aspirasi Siswa</p>
@@ -160,9 +159,12 @@
             <div>
               <div class="hero-card-side">
                 <div class="hero-card-header">
-                  <div class="inst-meta">
-                    <h4>MAN 1 JEMBER</h4>
-                    <p>Madrasah Riset & Karakter Unggul</p>
+                  <div style="display:flex; align-items:center; gap:12px;">
+                    <img src="logo-mpk.png" alt="Logo MPK" style="width:42px; height:42px; object-fit:contain;">
+                    <div class="inst-meta">
+                      <h4>MAN 1 JEMBER</h4>
+                      <p>Madrasah Riset & Karakter Unggul</p>
+                    </div>
                   </div>
                   <span class="brand-tag">Aktif 2026/2027</span>
                 </div>
@@ -170,7 +172,9 @@
                 <div class="manifesto-box">
                   <span>Falsafah Legislatif Siswa</span>
                   <blockquote>
-                    "Suara setiap perwakilan kelas adalah pilar kemajuan madrasah tercinta."
+                    <i>
+                      "Aspirasi Siswa Tanggung Jawab Kita"
+                    </i>
                   </blockquote>
                 </div>
 
@@ -249,7 +253,7 @@
                   kejayaan civitas MAN 1 Jember."
                 </blockquote>
 
-                <h4 style="font-size:1rem; font-weight:700; color:#34d399; margin-bottom:12px;">Misi Kerja Legislatif:
+                <h4 style="font-size:1rem; font-weight:700; color:#f87171; margin-bottom:12px;">Misi Kerja Legislatif:
                 </h4>
                 <ul style="list-style:none; font-size:0.85rem; color:#cbd5e1; line-height:1.7;">
                   <li style="margin-bottom:8px;">✔ <strong>Misi 1:</strong> Optimalisasi penyerapan aspirasi kelas
@@ -264,7 +268,7 @@
               <div
                 style="margin-top:24px; padding-top:16px; border-top:1px solid rgba(255, 255, 255, 0.1); font-size:0.75rem; color:var(--slate-400); display:flex; justify-content:space-between;">
                 <span>Draf AD/ART MPK 2026/2027</span>
-                <span style="color:#34d399; font-weight:700;">Disahkan Musyawarah Siswa</span>
+                <span style="color:#f87171; font-weight:700;">Disahkan Musyawarah Siswa</span>
               </div>
             </div>
 
@@ -401,7 +405,7 @@
               <div>
                 <div
                   style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--slate-400); margin-bottom:10px;">
-                  <span class="brand-tag" style="background:#ccfbf1; color:#0f766e;">Sidang Pleno</span>
+                  <span class="brand-tag" style="background:#fee2e2; color:#991b1b;">Sidang Pleno</span>
                   <span>Per Triwulan</span>
                 </div>
                 <h4 class="card-title">Musyawarah Perwakilan Kelas</h4>
@@ -497,7 +501,7 @@
           </div>
 
           <div class="privacy-item">
-            <div class="privacy-item-icon" style="background:#ccfbf1; color:#0f766e;">
+            <div class="privacy-item-icon" style="background:#fee2e2; color:#991b1b;">
               <svg viewBox="0 0 24 24">
                 <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z" />
               </svg>
@@ -922,7 +926,8 @@
 
         <div class="footer-brand">
           <h4>
-            <span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#34d399;"></span>
+            <img src="logo-mpk.png" alt="Logo MPK"
+              style="width:24px; height:24px; object-fit:contain; vertical-align:middle; margin-right:6px;">
             MPK MAN 1 JEMBER
           </h4>
           <p>
@@ -937,7 +942,7 @@
             <li><button onclick="switchPage('portofolio')">Portofolio MPK</button></li>
             <li><button onclick="switchPage('kotak-saran')">Kotak Saran Siswa</button></li>
             <li><button onclick="switchPage('jawaban')">Kumpulan Jawaban</button></li>
-            <li><button onclick="openLoginModal()" style="color:#6ee7b7;">🔑 Login Pengurus (Admin / Sekre)</button>
+            <li><button onclick="openLoginModal()" style="color:#fca5a5;">🔑 Login Pengurus</button>
             </li>
             <li><button onclick="resetDataDemo()" style="color:#fde047;">↺ Reset Data Contoh</button></li>
           </ul>
@@ -949,7 +954,7 @@
             Gedung Organisasi Siswa Lt. 2<br>
             MAN 1 JEMBER<br>
             Jl. Imam Bonjol No. 50, Kaliwates, Jember, Jawa Timur.<br>
-            <span style="color:#34d399; font-weight:700;">mpk@man1jember.sch.id</span>
+            <span style="color:#f87171; font-weight:700;">mpk@man1jember.sch.id</span>
           </p>
         </div>
 
